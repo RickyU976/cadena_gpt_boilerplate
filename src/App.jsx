@@ -46,7 +46,7 @@ const App = () => {
           <input
             className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
-            placeholder="Enter a topic/industry you want to learn about."
+            placeholder="Hi, enter a topic/industry you want to learn about."
             value={prompt}
             onChange={handlePromptChange}
           />
