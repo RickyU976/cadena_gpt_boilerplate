@@ -24,7 +24,7 @@ const App = () => {
     try {
       const completions = await apiClient.createCompletion({
         model: "text-davinci-003",
-        prompt: `learn about the importance of this industry: ${prompt}`,
+        prompt: `learn about the importance of this industry : ${prompt}`,
         max_tokens: 880,
         temperature: 0.7,
         top_p: 1,
