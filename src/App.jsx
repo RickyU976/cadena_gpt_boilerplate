@@ -24,7 +24,7 @@ const App = () => {
     try {
       const completions = await apiClient.createCompletion({
         model: "text-davinci-003",
-        prompt: `Customize Your Prompt Here: ${prompt}`,
+        prompt: `learn about the importance of this industry: ${prompt}`,
         max_tokens: 880,
         temperature: 0.7,
         top_p: 1,
@@ -46,7 +46,7 @@ const App = () => {
           <input
             className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
-            placeholder="Enter a topic you want to tweet about."
+            placeholder="Enter a topic/industry you want to learn about."
             value={prompt}
             onChange={handlePromptChange}
           />
